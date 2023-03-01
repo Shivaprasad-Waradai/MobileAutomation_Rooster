@@ -1,5 +1,6 @@
 package com.example.mobileautomation_rooster;
 
+import androidx.annotation.RequiresPermission;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.uiautomator.UiDevice;
@@ -41,10 +42,9 @@ public class Mst_Settings extends Utility_Functions {
         // Context of the app under test.
 
         int i;
-
         for (i = 1; i <= openClose_Settings_Loop; i++) {
             openClose_Apps("Settings");
-            System.out.println(" **********************Open and close Phone App " + i);
+            System.out.println(" **********************Open and close Settings App " + i);
         }
     }
 
@@ -53,7 +53,6 @@ public class Mst_Settings extends Utility_Functions {
         // Context of the app under test.
 
         int i;
-
         for (i = 1; i <=mst_settings_loop; i++) {
             mst_Settings();
             System.out.println(" **********************Open and close Settings App " + i);
@@ -82,6 +81,7 @@ public class Mst_Settings extends Utility_Functions {
                     .text(Settings_Display_Text));
             UiObject Sound  = new UiObject(new UiSelector()
                     .text(Settings_Sound_Text));
+
             UiObject Security_Location  = new UiObject(new UiSelector()
                     .resourceId(Settings_Security_Location_Text));
             UiObject User_Acc  = new UiObject(new UiSelector()
@@ -107,33 +107,44 @@ public class Mst_Settings extends Utility_Functions {
             ufMenu_srch_App("Settings");
             Settings_drag.swipeDown(2);
             Network_Internet.click();
-            device.pressBack(); Thread.sleep(1000);
+            device.pressBack();
+            Connected_Dev.waitForExists(1000);
             Connected_Dev.click();
-            device.pressBack(); Thread.sleep(1000);
+            device.pressBack();
+            Apps_Notifi.waitForExists(1000);
             Apps_Notifi.click();
-            device.pressBack(); Thread.sleep(1000);
+            device.pressBack();
+            Battery.waitForExists(1000);
             Battery.click();
-            device.pressBack(); Thread.sleep(1000);
+            device.pressBack();
+            Display.waitForExists(1000);
             Display.click();
-            device.pressBack(); Thread.sleep(1000);
+            device.pressBack();
+            Sound.waitForExists(1000);
             Sound.click();
-            device.pressBack(); Thread.sleep(1000);
+            device.pressBack();
+            Storage.waitForExists(1000);
             Storage.click();
-            device.pressBack(); Thread.sleep(1000);
+            device.pressBack();
+            Security_Location.waitForExists(1000);
             Security_Location.click();
-            device.pressBack(); Thread.sleep(1000);
+            device.pressBack();
+            User_Acc.waitForExists(1000);
             User_Acc.click();
-            device.pressBack(); Thread.sleep(1000);
+            device.pressBack();
+            Accessibility.waitForExists(1000);
             Accessibility.click();
-            device.pressBack(); Thread.sleep(1000);
+            device.pressBack();
+            Google.waitForExists(1000);
             Google.click();
-            device.pressBack(); Thread.sleep(1000);
+            device.pressBack();
+            Dev_System.waitForExists(1000);
             Dev_System.click();
             device.pressBack(); Thread.sleep(1000);
 
-
             Thread.sleep(3000);
             System.out.println("**********************Open and close Phone app - PASS ********************");
+
 
 
 
