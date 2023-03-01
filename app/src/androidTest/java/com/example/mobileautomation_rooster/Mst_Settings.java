@@ -18,7 +18,9 @@ import org.junit.runner.RunWith;
     1. Open All apps menu
     2. Search Settings in apps list
     3. Return back to Home screen
-
+    4. adding comment to check git commit
+ */
+/*
 
     //*******Test Case 2 : Open the Settings and Navigate to all the options in the Phone App
         1.
