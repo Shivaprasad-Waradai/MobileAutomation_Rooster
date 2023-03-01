@@ -85,17 +85,17 @@ public class Mst_Settings extends Utility_Functions {
                     .text(Settings_Sound_Text));
 
             UiObject Security_Location  = new UiObject(new UiSelector()
-                    .resourceId(Settings_Security_Location_Text));
+                    .text(Settings_Security_Location_Text));
             UiObject User_Acc  = new UiObject(new UiSelector()
-                    .resourceId(Settings_User_Acc_Text));
+                    .text(Settings_User_Acc_Text));
             UiObject Accessibility  = new UiObject(new UiSelector()
-                    .resourceId(Settings_Accessibility_Text));
+                    .text(Settings_Accessibility_Text));
             UiObject Google  = new UiObject(new UiSelector()
-                    .resourceId(Settings_Google_Text));
+                    .text(Settings_Google_Text));
             UiObject Dev_System  = new UiObject(new UiSelector()
-                    .resourceId(Settings_System_Text));
+                    .text(Settings_System_Text));
             UiObject Storage  = new UiObject(new UiSelector()
-                    .resourceId(Settings_Storage_Text));
+                    .text(Settings_Storage_Text));
 
 
 
@@ -128,6 +128,7 @@ public class Mst_Settings extends Utility_Functions {
             Storage.waitForExists(1000);
             Storage.click();
             device.pressBack();
+            Settings_drag.swipeUp(2);
             Security_Location.waitForExists(1000);
             Security_Location.click();
             device.pressBack();
