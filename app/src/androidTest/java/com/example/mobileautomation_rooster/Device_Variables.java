@@ -10,7 +10,7 @@ public class Device_Variables {
     int openclose_PhoneApp_Loop = 1;
 
     int openClose_Settings_Loop = 1;
-    int mst_settings_loop = 1;
+    int mst_settings_loop = 1000;
 
     int openclose_Camera_Loop = 1;
     int openclose_Calendar_Loop = 1;

@@ -25,6 +25,8 @@
               <option name="preferredColumnWidths">
                 <map>
                   <entry key="Duration" value="90" />
+                  <entry key="FRTBD71109000467" value="120" />
+                  <entry key="HMD Global&#10; Nokia 1 Saathi" value="120" />
                   <entry key="ROOBA80703000572" value="120" />
                   <entry key="Rider&#10; Rider" value="120" />
                   <entry key="Tests" value="360" />
@@ -53,6 +55,22 @@
               <option name="preferredColumnWidths">
                 <map>
                   <entry key="Duration" value="90" />
+                  <entry key="ROOBA80703000572" value="120" />
+                  <entry key="Rider&#10; Rider" value="120" />
+                  <entry key="Tests" value="360" />
+                </map>
+              </option>
+            </AndroidTestResultsTableState>
+          </value>
+        </entry>
+        <entry key="1440653184">
+          <value>
+            <AndroidTestResultsTableState>
+              <option name="preferredColumnWidths">
+                <map>
+                  <entry key="Duration" value="90" />
+                  <entry key="FRTBD71109000467" value="120" />
+                  <entry key="HMD Global&#10; Nokia 1 Saathi" value="120" />
                   <entry key="ROOBA80703000572" value="120" />
                   <entry key="Rider&#10; Rider" value="120" />
                   <entry key="Tests" value="360" />
